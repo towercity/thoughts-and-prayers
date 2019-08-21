@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'advice';
+    src: url('assets/ATViCE.ttf');
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -6,4 +11,84 @@
 body {
     background: url('assets/bg.jpg') center center fixed;
     background-size: cover;
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'advice';
+}
+
+header {
+    padding: 1.25vw;
+}
+
+#logo img {
+    height: 75px;
+    float: left;
+}
+
+.header-links {
+    float: right;
+}
+
+.header-links li {
+    display: inline-block;
+    list-style: none;
+    font-family: 'advice';
+    padding: 1.5em 2em;
+}
+
+.header-links li a,
+.header-links li a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+.splash-text {
+    text-align: center;
+    margin: 125px auto 0;
+    max-width: 700px;
+    height: calc(100vh - 125px);
+    position: relative;
+}
+
+.title {
+    padding-top: 0.25em;
+    font-size: 4.75em;
+}
+
+.sub-title {
+    padding-top: 0.75em;
+    font-size: 2em;
+    line-height: 1.25em;
+}
+
+.attr-heading {
+    font-size: 1.2em;
+    line-height: 1.35em;
+}
+
+#scroll-arrow {
+    position: absolute;
+    bottom: 5vh;
+    cursor: pointer;
+    width: 20px;
+    left: calc(50% - 10px);
+    font-size: 2em;
+}
+
+.play-info {
+    max-width: 900px;
+    text-align: justify;
+    margin: 5em 2.5vw;
+    padding: 0 2.5vw;
+    background: rgba(0, 0, 0, 0.35);
+    font-size: 1.15em;
+    line-height: 1.4em;
+}
+
+.play-info p {
+    padding: 0.75em 0;
 }
